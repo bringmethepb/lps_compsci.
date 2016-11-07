@@ -1,0 +1,9 @@
+
+print("How much does it cost you for a Coke?")
+cost = raw_input()
+
+print("How many Cokes will you drink today?")
+Cokes = raw_input()
+X = int(cost) + int(Cokes)
+print("Wow, you are going to spend" + str(X) + "dollars on sugar water today!")
+

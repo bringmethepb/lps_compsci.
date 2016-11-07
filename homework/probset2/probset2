@@ -1,0 +1,5 @@
+print('What integer would you like to square?')
+myinteger = int(raw_input())
+print('What would you like to square it by?')
+squareinp = int(raw_input()) 
+squaredint = (myinteger ** squareinp)
