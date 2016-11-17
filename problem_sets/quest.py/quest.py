@@ -20,16 +20,15 @@ else:
 print(str(userchrtr) + ", you've come across a fork in the road. Do you wish to go right or left? Enter 'left' or 'right'.") 
 userchoice = str(raw_input()) 
 # here, the users fate is determined by which way they chose to go and based on their stats, their fate  will be determined  
-if userchoice == 'left' and userluck <= 5 and userstrength <= 5 or userhealth <= 2:
-	print("Oh my! Some clowns appeared out of nowhere and stabbed you to death because you were not strong enough to fight them off. YOu lose :( ")
-if userchoice == 'left' and  userluck >= 6 and userstrength >= 8 or userhealth >= 7:
-	print("Some clowns appeared before you and you were able to fight them off and run away! You win!...for now..")
-if userchoice == 'left' and userluck >= 7 and userhealth >= 6 or userstrength >= 7:
-	print("A giant dog appeared before you and you were lucky enough to find a dog biscuit for it and you were healthy enough to run away. You win! ") 
+if userchoice == 'left' and userluck <= 5 and userhealth <= 4 or userstrength <= 3:
+	print("Oh my! How unlucky of you, some clowns appeared out of nowhere and stabbed you to death because you were not strong enough to fight them off. YOu lose :( ")
+if userchoice == 'left' and userluck >= 7 and userhealth >= 5 or userstrength >= 6:
+	print("A giant dog appeared before you and you were lucky enough to find a dog biscuit for it as well as healthy enough to run away. You win! ") 
 
-if userchoice == 'right' and userstrength >= 6 and userhealth >= 6 or userluck >= 8:
-	print("An old tree fell before you and you were able to jump over it and run away from Slenderman. You win!... for now...")
-if userchoice == 'right' and userstrength <= 4 and userhealth <= 4 or userluck <= 2: 
-	print("An old tree fell before you and you were not healthy enough to jump over it so a troll beat you to death with its stick. You lose :( ")  
-if userchoice == 'right' and userluck <= 4 and userhealth <= 5: 
-	print("Oh no, Slenderman appeared before you and you were not lucky nor healthy enough to be able to run away. You lose :( ") 
+
+else:
+	if userchoice == 'right' and userstrength >= 5 and userhealth >= 6 or userluck >= 4 < 7:
+		print("An old tree fell before you and you were strong enough or healthy enough to jump over it and run away from Slenderman. You win!... for now...")
+	if userchoice == 'right' and userstrength <= 4 and userhealth <= 3 or userluck <= 3: 
+		print("An old tree fell before you and you were not healthy enough to jump over it so a troll beat you to death with its stick. You lose :( ")
+
